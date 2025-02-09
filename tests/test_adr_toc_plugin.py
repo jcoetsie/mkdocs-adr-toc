@@ -1,6 +1,8 @@
 import os
 import unittest
 from unittest.mock import MagicMock, patch
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from adr_toc_plugin import ADRTOCPlugin
 
 class TestADRTOCPlugin(unittest.TestCase):
